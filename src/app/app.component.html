@@ -1,3 +1,15 @@
-
 <p>Hi</p>
+<mat-slider min="1" max="100" step="1" value="1"></mat-slider>
+
+<section class="container">
+  <div class="row">
+    <mat-card class="col-md-6">1</mat-card>
+    <!-- we use mat-card instead of div -->
+    <mat-card class="col-md-6">2</mat-card>
+    <mat-card class="col-md-6 d-block d-lg-none">3</mat-card>
+    <!-- will be hidden on large screens -->
+    <mat-card class="col-md-6 d-block d-lg-none">4</mat-card>
+  </div>
+</section>
+
 <router-outlet></router-outlet>
