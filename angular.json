@@ -137,7 +137,6 @@
     }
   },
   "cli": {
-    "defaultCollection": "@ngrx/schematics",
-    "analytics": false
+    "defaultCollection": "@ngrx/schematics"
   }
 }
