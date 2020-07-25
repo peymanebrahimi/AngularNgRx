@@ -5,7 +5,6 @@ import { Course } from './model/course';
 import { Store, select } from '@ngrx/store';
 import { AppState } from 'app/reducers';
 import { tap, first, finalize, filter } from 'rxjs/operators';
-import { loadCourses } from "./course.actions";
 
 // @Injectable({ providedIn: 'root' })
 @Injectable()
