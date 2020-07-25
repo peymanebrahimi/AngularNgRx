@@ -58,6 +58,7 @@ const routes: Routes = [
       stateKey: "router",
       routerState: RouterState.Minimal
     }),
+    EntityDataModule.forRoot({}),
   ],
   bootstrap: [AppComponent],
 })

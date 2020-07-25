@@ -21,13 +21,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule, Routes } from '@angular/router';
-import { EntityDataService, EntityDefinitionService, EntityMetadataMap } from '@ngrx/data';
-import { compareCourses, Course } from './model/course';
 
-import { compareLessons, Lesson } from './model/lesson';
 import { CoursesResolverService } from "./courses-resolver.service";
-import { EffectsModule } from '@ngrx/effects';
-import { StoreModule } from '@ngrx/store';
+import { EntityDataModule } from '@ngrx/data';
+import { entityConfig } from './entity-metadata';
 
 export const coursesRoutes: Routes = [
   {
@@ -63,6 +60,7 @@ export const coursesRoutes: Routes = [
     MatMomentDateModule,
     ReactiveFormsModule,
     RouterModule.forChild(coursesRoutes),
+    EntityDataModule.forRoot(entityConfig),
 
   ],
   declarations: [
